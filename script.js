@@ -54,7 +54,7 @@ if (!isTouchDevice) {
 } else {
   canvas.addEventListener("touchstart", (e) => {
     e.preventDefault();
-    for (const touch of e.touches) {
+    for (const touch of e.changedTouches) {
       ballOneFunc(touch.clientX, touch.clientY);
 
       ballsSpamInterval = setInterval(() => {
@@ -64,6 +64,7 @@ if (!isTouchDevice) {
   });
 
   canvas.addEventListener("touchend", (e) => {
+    console.log(e.changedTouches);
     clearInterval(ballsSpamInterval);
   });
 

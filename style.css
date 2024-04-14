@@ -16,6 +16,8 @@ body {
 .mobile-space-btn {
   position: fixed;
   bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 65svw;
   height: 40px;
   border: #808080 2px solid;
