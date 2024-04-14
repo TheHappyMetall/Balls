@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: Tahoma;
+}
+
+.mobile-space-btn {
+  position: fixed;
+  bottom: 10px;
+  width: 65svw;
+  height: 40px;
+  border: #808080 2px solid;
+  border-radius: 5px;
+  color: #808080;
+  display: grid;
+  place-items: center;
+
+  max-width: 350px;
+
+  background: rgba(128, 128, 128, 0.2);
+
+  &:active {
+    opacity: 0.6;
+  }
+}
